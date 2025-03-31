@@ -1,0 +1,47 @@
+import java.util.Scanner;
+import java.util.UUID;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+public class Disney {
+    public static class Shows {
+        static SimpleDateFormat ddf = new SimpleDateFormat("dd MM,yyyy");
+        public static ArrayList<Shows> allShows = new ArrayList<Shows>();//arraylist
+        //Atributos privados
+        private String SHOW_ID;
+        private String TYPE;
+        private String TITLE;
+        private String DIRECTOR;
+        private String[] CAST;
+        private String COUNTRY;
+        private Date DATE_ADDED;
+        private Int RELEASE_YEAR;
+        private Int RATING;
+        private String DURATION;
+        private String[] LISTED_IN;
+    //------------------------------------------------------------------------------------------------------------------------------------//
+        //construtor vazio
+        public Shows(){
+            this.SHOW_ID="";
+            this.TYPE="";
+            this.TITLE="";
+            this.DIRECTOR="";
+            this.COUNTRY="";
+            this.DURATION="";
+            this.DATE_ADDED=null;
+            this.RELEASE_YEAR=0;
+            this.RATING=0;
+
+        }
+    //-----------------------------------------------------------------------------------------------------------------------------------//
+        public Shows(String SHOW_ID,String TYPE,String TITLE,String DIRECTOR,String COUNTRY,Date DATE_ADDED,){
+    
+        
+        }
+
+
