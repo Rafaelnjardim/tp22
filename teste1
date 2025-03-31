@@ -27,21 +27,36 @@ public class Disney {
     //------------------------------------------------------------------------------------------------------------------------------------//
         //construtor vazio
         public Shows(){
-            this.SHOW_ID="";
-            this.TYPE="";
-            this.TITLE="";
-            this.DIRECTOR="";
-            this.COUNTRY="";
-            this.DURATION="";
+            this.SHOW_ID="NaN";
+            this.TYPE="NaN";
+            this.TITLE="NaN";
+            this.DIRECTOR="NaN";
+            this.COUNTRY="NaN";
+            this.DURATION="NaN";
             this.DATE_ADDED=null;
             this.RELEASE_YEAR=0;
             this.RATING=0;
 
         }
     //-----------------------------------------------------------------------------------------------------------------------------------//
-        public Shows(String SHOW_ID,String TYPE,String TITLE,String DIRECTOR,String COUNTRY,Date DATE_ADDED,){
+        //construtor
+        public Showss(String SHOW_ID,String TYPE,String TITLE,String DIRECTOR,String COUNTRY,String DURATION
+        Date DATE_ADDED,int RELEASE_YEAR, int RATING, String DURATION,String[] CAST,String[] LISTED_IN ){
     
         
         }
 
 
+
+
+
+
+
+
+    
+
+
+
+    
+    }
+}
