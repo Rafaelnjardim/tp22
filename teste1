@@ -24,7 +24,7 @@ public class Disney {
         private Int RATING;
         private String DURATION;
         private String[] LISTED_IN;
-    //------------------------------------------------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------------------------------------------------//
         //construtor vazio
         public Shows(){
             this.SHOW_ID="NaN";
@@ -38,7 +38,7 @@ public class Disney {
             this.RATING=0;
 
         }
-    //-----------------------------------------------------------------------------------------------------------------------------------//
+ //----------------------------------------------------------------------------------------------------------------------------------------//
         //construtor
         public Showss(String SHOW_ID,String TYPE,String TITLE,String DIRECTOR,String COUNTRY,String DURATION,
         Date DATE_ADDED,int RELEASE_YEAR, int RATING,String[] CAST,String[] LISTED_IN ){
@@ -50,10 +50,12 @@ public class Disney {
             this.DURATION=DURATION;
             this.DATE_ADDED=DATE_ADDED;
             this.RELEASE_YEAR=RELEASE_YEAR;
+            this.LISTED_IN=LISTED_IN;
+            this.CAST=CAST;
     
         
         }
-    //-----------------------------------------------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------------------------------------------------//
     //gets
     public String getSHOW_ID(){
         return this.SHOW_ID;
@@ -70,31 +72,70 @@ public class Disney {
     public String getCOUNTRY(){
         return this.COUNTRY;
     }
-    public Date DATE_ADDED(){
+    public Date getDATE_ADDED(){
         return this.DATE_ADDED;
     }
-    public int RELEASE_YEAR(){
+    public int getRELEASE_YEAR(){
         return this.RELEASE_YEAR;
     }
-    public int RATING(){
+    public int getRATING(){
         return this.RATING;
     }
-    
-
-
-
-
-
-
-
-
-    
-
-
-
-    
+    public String getDURATION(){
+        return this.DURATION;
     }
-}
+    public String[] getCAST(){
+        return this.CAST;
+    }
+    public String[] getLISTED_IN(){
+        return this.LISTED_IN;
+    }
+//----------------------------------------------------------------------------------------------------------------------------------------//
+    //sets
+    public void setSHOW_ID(String SHOW_ID){
+        this.SHOW_ID=SHOW_ID;
+    }
+    public void setTYPE(String TYPE){
+        this.TYPE=TYPE;
+    }
+    public void setTITLE(String TITLE){
+        this.TITLE=TITLE;
+    }
+    public void setDIRECTOR(String DIRECTOR){
+        this.DIRECTOR=DIRECTOR;
+    }
+    public void setLISTED_IN(String[] LISTED_IN){
+        this.LISTED_IN=LISTED_IN;
+    }
+    public void setCAST(String[] CAST){
+        this.CAST=CAST;
+    }
+
+    public void setCOUNTRY(String COUNTRY){
+        this.COUNTRY=COUNTRY;
+    }
+    public void setDATE_ADDED(Date DATE_ADDED){
+        this.DATE_ADDED=DATE_ADDED;
+    }
+    public void setRELEASE_YEAR(int RELEASE_YEAR){
+        this.RELEASE_YEAR=RELEASE_YEAR;
+    }
+    public void setRATING(int RATING){
+        this.RATING=RATING;
+    }
+    public void setDURATION(String DURATION){
+        this.DURATION=DURATION;
+    }
+//----------------------------------------------------------------------------------------------------------------------------------------//
+//Clone
+public Shows clone()
+
+
+    
+    
+
+
+
 
 
 
