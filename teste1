@@ -40,14 +40,61 @@ public class Disney {
         }
     //-----------------------------------------------------------------------------------------------------------------------------------//
         //construtor
-        public Showss(String SHOW_ID,String TYPE,String TITLE,String DIRECTOR,String COUNTRY,String DURATION
-        Date DATE_ADDED,int RELEASE_YEAR, int RATING, String DURATION,String[] CAST,String[] LISTED_IN ){
+        public Showss(String SHOW_ID,String TYPE,String TITLE,String DIRECTOR,String COUNTRY,String DURATION,
+        Date DATE_ADDED,int RELEASE_YEAR, int RATING,String[] CAST,String[] LISTED_IN ){
+            this.SHOW_ID=SHOW_ID;
+            this.TYPE=TYPE;
+            this.TITLE=TITLE;
+            this.DIRECTOR=DIRECTOR;
+            this.COUNTRY=COUNTRY;
+            this.DURATION=DURATION;
+            this.DATE_ADDED=DATE_ADDED;
+            this.RELEASE_YEAR=RELEASE_YEAR;
     
         
         }
+    //-----------------------------------------------------------------------------------------------------------------------------------//
+    //gets
+    public String getSHOW_ID(){
+        return this.SHOW_ID;
+    }
+    public String getTYPE(){
+        return this.TYPE;
+    }
+    public String getTITLE(){
+        return this.TITLE;
+    }
+    public String getDIRECTOR(){
+        return this.DIRECTOR;
+    }
+    public String getCOUNTRY(){
+        return this.COUNTRY;
+    }
+    public Date DATE_ADDED(){
+        return this.DATE_ADDED;
+    }
+    public int RELEASE_YEAR(){
+        return this.RELEASE_YEAR;
+    }
+    public int RATING(){
+        return this.RATING;
+    }
+    
 
 
 
+
+
+
+
+
+    
+
+
+
+    
+    }
+}
 
 
 
