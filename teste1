@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
-public class Disney {
-    public static class Shows {
+public class Shows {
+
         static SimpleDateFormat ddf = new SimpleDateFormat("dd MM,yyyy");
         public static ArrayList<Shows> allShows = new ArrayList<Shows>();//arraylist
         //Atributos privados
@@ -27,15 +27,17 @@ public class Disney {
 //----------------------------------------------------------------------------------------------------------------------------------------//
         //construtor vazio
         public Shows(){
-            this.SHOW_ID="NaN";
-            this.TYPE="NaN";
-            this.TITLE="NaN";
-            this.DIRECTOR="NaN";
-            this.COUNTRY="NaN";
-            this.DURATION="NaN";
-            this.DATE_ADDED=null;
-            this.RELEASE_YEAR=0;
-            this.RATING=0;
+            this.SHOW_ID = "NaN";
+            this.TYPE = "NaN";
+            this.TITLE = "NaN";
+            this.DIRECTOR = "NaN";
+            this.COUNTRY = "NaN";
+            this.DURATION = "NaN";
+            this.DATE_ADDED = null;
+            this.RELEASE_YEAR = 0;
+            this.RATING = 0;
+            this.CAST = new String[0];
+            this.LISTED_IN = new String[0];
 
         }
  //----------------------------------------------------------------------------------------------------------------------------------------//
@@ -128,23 +130,41 @@ public class Disney {
     }
 //----------------------------------------------------------------------------------------------------------------------------------------//
 //Clone
-public Shows clone()
-
-
-    
-    
-
-
-
-
-
-
-
-
-    
-
-
-
-    
-    }
+public Shows clone() {
+    return new Shows(
+        this.SHOW_ID,
+        this.TYPE,
+        this.TITLE,
+        this.DIRECTOR,
+        this.LISTED_IN,
+        this.CAST,
+        this.COUNTRY,
+        this.DATE_ADDED,     
+        this.RELEASE_YEAR,
+        this.RATING,
+        this.DURATION         
+    );
 }
+//==========================================================================================================================//
+//printar
+public void print() {
+    System.out.print("["
+        + this.getSHOW_ID() + " ## "
+        + this.getTYPE() + " ## "
+        + this.getTITLE() + " ## "
+        + this.getDIRECTOR() + " ## "
+        + this.getCOUNTRY() + " ## "
+        + (this.getDATE_ADDED() == null ? "NaN" : ddf.format(this.getDATE_ADDED())) + " ## "
+        + (this.getRELEASE_YEAR() == 0 ? "NaN" : this.getRELEASE_YEAR()) + " ## "
+        + (this.getRATING() == 0 ? "NaN" : this.getRATING()) + " ## "
+        + this.getDURATION() + " ## "
+        + (this.getCAST().length == 0 ? "NaN" : String.join(", ", this.getCAST())) + " ## "
+        + (this.getLISTED_IN().length == 0 ? "NaN" : String.join(", ", this.getLISTED_IN()))
+        + "]");
+    System.out.println();
+}
+
+
+
+    
+    
